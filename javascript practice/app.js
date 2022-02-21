@@ -292,12 +292,84 @@
 //         console.log(`Enter an Integer`)
 // }
 
+                // .............funtion inside an Object........
+
+//When an function is used inside an object that is called method. we can get that by 'objectName.propertyName()'
+// Next topc will be about what exactly the function is, and the relevent topics/
+
+// let me, awa;
+// me = {
+//         name : 'Almas Javed',
+//         says : function (){
+//                 return "Hello";
+//         }
+// }
+// // awa = me.name;
+// console.log(`${me.name} says ${me.says()}`)
+
+                // .............Function(declaration and expression)............
+
+//Function is used when same line of code has to be repeated. To avoid code redundancy, funtion is used
+//Function can be either function declaration or function expression.The difference is that function expression 
+//works only if it is defined, While Function decalartion does not need definition, both need to be called for use. Function declaration goes first in the example.
+
+// function myName() {
+//         document.write(`My name is Almas Javed, and i am genius :) <br>`)
+// }
+// myName();
+// myName();
+// myName();
+
+// var dadyName = function(){
+//         document.write(`My Dady's name is Javed Hayat, and he's genius too :)<br>`)
+// }
+// dadyName();
+// dadyName();
+// dadyName();
+// dadyName();
+
+// If we need a specific line of code to be repeated but with different values, we use the concept of parameter and arguement for that
+//parameters are the variable to which arguments are provided or the default values.
 
 
+// function sisters(Fsister = 'Asma', Ssister = 'Yusra') {
+//         document.write(`${Fsister} and ${Ssister} are my Sisters Yoooo`)
+// }                                                                              //if we do not pass any argument, the default values will be run
+// sisters('Fariha','Shagufa');
 
 
+// The most useful way of using functions is to use it with return values, which return you the value which u use whatever you wants to use that for
+
+// var a,b;
+
+// function sum(a=8,b=9) {
+//         return a + b;
+// }
+
+// document.write(sum())
 
 
+//              ..............METHODS OF PRIMITIVE DATA TYPE............
+// Methods are usually refered as to be for referencial data types. But Primitive data type also got some 
+// methods for having different features. There are few bulit-in functions which perform specific task e.g., new Date(), error(), time()and timeEnd() etc.
+//below are Methods of string, Numbers and arrayss.
 
+                        // *******String Methods*******
 
+var str1, str2, str3, str4, sTring1, sTring2;
+str1 = 'I am';
+str2 = 'Lucky'; 
+str3 =  'How';
+str4 = 'It\'s not exactly what it looks like'           //to disable the function of \' here we use back-slash wich we used in the comment also.
+
+sTring1 = str3.concat(` ${str2}`)
+sTring2 = sTring1.concat(` ${str1}`)
+// document.write(sTring2)
+
+// document.write(str2.charAt('3'))
+// document.write(str3.indexOf('w'))
+// document.write(str4.substring(0,16))                 //substring and slice are simmilar with the only difference that
+// document.write(str4.slice(-12,-2))                   // substring doen't accept negative values and slice does,and shows the characters form reverse
+//document.write(str4.split(' '))                         // split shows the words in the string in array form
+document.write(str4.replace('exactly', 'actually'))
 
