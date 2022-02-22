@@ -356,14 +356,14 @@
 
                         // *******String Methods*******
 
-var str1, str2, str3, str4, sTring1, sTring2;
-str1 = 'I am';
-str2 = 'Lucky'; 
-str3 =  'How';
-str4 = 'It\'s not exactly what it looks like'           //to disable the function of \' here we use back-slash wich we used in the comment also.
+// var str1, str2, str3, str4, sTring1, sTring2;
+// str1 = 'I am';
+// str2 = 'Lucky'; 
+// str3 =  'How';
+// str4 = 'It\'s not exactly what it looks like'           //to disable the function of \' here we use back-slash wich we used in the comment also.
 
-sTring1 = str3.concat(` ${str2}`)
-sTring2 = sTring1.concat(` ${str1}`)
+// sTring1 = str3.concat(` ${str2}`)
+// sTring2 = sTring1.concat(` ${str1}`)
 // document.write(sTring2)
 
 // document.write(str2.charAt('3'))
@@ -371,5 +371,139 @@ sTring2 = sTring1.concat(` ${str1}`)
 // document.write(str4.substring(0,16))                 //substring and slice are simmilar with the only difference that
 // document.write(str4.slice(-12,-2))                   // substring doen't accept negative values and slice does,and shows the characters form reverse
 //document.write(str4.split(' '))                         // split shows the words in the string in array form
-document.write(str4.replace('exactly', 'actually'))
+//document.write(str4.replace('exactly', 'actually'))       //it replaces the specific word
 
+
+                        // ............Arryas and Array methods...........
+// Array basically a container which stores series of Data, for example fruit names, numbers etc
+//Array has got method, using them we can do manipulation in array.
+                        // ********** Array Declaration**********
+
+// var fruits = ['Banana','Guava','Mango','Palmgranet','Strawberry'];      //simply using brackcets
+// var nmbrs = new Array(34,56,2,45,90,4)                                  //using the object
+                        // ********* Array Methods*********
+// var x;
+//x = fruits.length;                                                      //tells how many values the array has got
+//x = Array.isArray(nmbrs);
+//x = Array.isArray(banana) ;                                              //tells if the value in the paranthesis is arrar or not
+// x = nmbrs[5];                                                              //prints the value in the given index
+// x = fruits.indexOf('Palmgranet')                                           //shows the index of the value
+//docuemnt.write(x)
+
+// fruits[1] = 'Harmit';                                                      //replaced the value in index[1] with hermit                                                                          
+
+// x = fruits.sort()                                               //sort them alphabetically,capitalized come first
+// fruits.push('almond')                                           //add this value at the end
+// fruits.unshift('Pear')                                          //add this value at front
+// fruits.pop();                                                   //Removes end wala value
+// fruits.shift();                                                 //Removes front wala value;
+// fruits.reverse();                                               //Shows the whole array putting them in reverse
+// document.write(x)
+
+
+                        // ...........LOOPS............
+
+// To deal with the codes that involve itrations with icremented or decremented values, we use Loops
+// Loop has three parts 
+                                        // initialization          (of the variable that stores the value to be decremnted or incremented)
+                                           // |
+                                           // |
+                                   //    (Conditions) -----------if false, the execution terminates there
+                                           // |
+                                           // |
+                                // if true,   (increment/decrement)    the condtions will be checked again and itration will continue until the condition is false
+
+                                // ********WHILE LOOP*******
+//variable is initialized, condition is set and line of statement is written, the value is incremented or decremented
+// then the condition is checked, if true the line of statement is run again, if not loop is terminated                             
+// var a;
+// a = 1
+// while (a<10) {
+//         document.write(`${a} Print whatever appears<br>`)
+//         a++;
+// }
+
+// a = 20;
+// while (a>=5) {
+//         document.write(`The line of the statement is getting decremented now from ${a}<br>`)
+//         a--;
+// }
+
+                                // ********* Do While Loop********
+
+// in DoWhile loop, the block of statement runs once regardless of  the condition, 
+// for the second run it goes for checking the condition,if the condition is true, the value is incemented
+// or decremented according to the requirement and run again. 
+
+// var tro;
+// tro = 4;
+
+// do {
+//         document.write(`My Goal for each day i wake up is, to stay positive till i go back to bed<br><br>`)
+//         tro--;                             //this will run five times
+// } while (tro>=0);
+
+                                // ********** For Loop*********
+                
+// In for loop, initialization, condition and icrement/decrement wale options come in the same line.
+//According to everyone i listened to, This loop is the mostly used loop by developers,
+//Below is the application of the loop.
+
+// for (let pt= 1; pt <= 7; pt++) {
+        
+//         document.write(`The point icreased to ${pt}<br>`)
+// }
+
+                                // ********Continue********
+//If we want ot print something other than the sequence wala code and we don want the same code to run which
+//normally DOMParser, we use continue for that. Break is used when we desire to terminate the loop before the condition is 
+// Fulfilled. Example is below
+
+
+// document.write(`Below, I write what make me humane<br>`)
+// for (let nmb = 1; nmb <=7; nmb++) {
+//         if (nmb===1) {
+//                 document.write(`${nmb}.  Empathy<br>`);
+//                 continue;
+//         } else if(nmb===2) {
+//                 document.write(`${nmb}.  Empathy<br>`);
+//                 continue;
+//         }else if(nmb===3) {
+//                 document.write(`${nmb}.  Empathy<br>`);
+//                 continue;
+//         }else if(nmb===4) {
+//                 document.write(`${nmb}.  Empathy<br>`);
+//                 continue;
+//         }else if(nmb===5) {
+//                 document.write(`${nmb}.  Empathy<br>`);
+//                 continue;
+//         }else if(nmb===6) {
+//                 document.write(`${nmb}.  Stop here, Go further... ;(<br>`);
+//                 break;
+//         }else if(nmb===7) {
+//                 document.write(`${nmb}.  Empathy<br>`);
+//         }else {
+//                 document.write(`${nmb}.  Empathy<br>`);
+//         }
+        
+// }
+
+
+// const mydata = [{name:"akbar",age : 30, education:"BSCS"},
+// {name :"almas", age : 20, education:"mcs"},
+// {name:"kashif",age: 23, education:"BCOM"},
+// {name: 'Fariha', age: 19, education:'FSc'}
+// ];
+// console.log(mydata[0].name);
+
+// for(let i of mydata){                   //i represents each object in the Array, using this syntax with of
+//     console.log(i);                     //gets the entire object.
+// }
+
+//for(let i of mydata){                   //i represents each object in the Array, using this syntax with of
+//    console.log(i.education);           // and by using the property name we can get that specific property.
+//}
+
+// for(let i in mydata){                       //i represents each object in the Array, using this syntax with in
+//         console.log(i);                     //gets the the indeces only
+//     }
