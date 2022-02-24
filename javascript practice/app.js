@@ -488,6 +488,7 @@
         
 // }
 
+                        // ******** Using objects inside array and using them inside loops********
 
 // const mydata = [{name:"akbar",age : 30, education:"BSCS"},
 // {name :"almas", age : 20, education:"mcs"},
@@ -507,3 +508,295 @@
 // for(let i in mydata){                       //i represents each object in the Array, using this syntax with in
 //         console.log(i);                     //gets the the indeces only
 //     }
+
+                        //.......Interaction: Alert, Prompt and Confirm..........
+
+// These are the built in object helps user interaction. User interacts with the ______ via these built in functions
+                        // **********Prompt**********
+// Via prompt, user is asked to add some Input. if the user writes any value, the result is entered
+// if the user presses cancel, the result is taken as null, while if the user presses ok without writing any value 
+// the result is taken as undefined
+
+// var val = prompt(`Enter any value`)
+
+// if (typeof(val) == typeof(5)) {
+//         console.log(`This one is number`)
+// }else if (typeof(val) == typeof('Me String')) {
+//         console.log(`This is surely a string`)
+// } else {
+//         console.log(`Enter any string or a number`)
+// }
+
+                        // ********** Alert***********
+//Alert Prints a message in the mini window that pops up at the top of the browser.The pop up disapears as ok
+// button is pressed
+
+// var age = 45;
+
+// if (age>20 && age<35) {
+//         alert(`You are eligible for this post`)
+// } else {
+//         alert(`SORRY! You are not eligible for this post`)
+// }
+
+                        // ******** Confirm**********
+// Confirm show a pop up at the top of the brower to ask a question of do a confirmation
+// to the wuestion if the answer is right, ok button is pressed otherwise cancell is pressed
+
+// var umr = 34;
+
+// confirm(`Are you ${umr} years old`);
+
+
+
+                
+
+                        // .............REVISION STARTS HERE.............
+//  Concepts related to console
+
+// console.log(`Hello`);
+// console.log(12345);
+// console.log(true);
+// var meetMe = 'Hi! How you doing?'
+// console.log(meetMe)
+// console.warn(`Beware! I am detective`)
+// console.time(`Hi`)
+// console.error(`Its your fault, all yours`)
+// console.error(`Its your fault, all yours`)
+// console.error(`Its your fault, all yours`)
+// console.error(`Its your fault, all yours`)
+// console.error(`Its your fault, all yours`)
+// console.timeEnd(`Hi`)
+// console.table({name: 'Almas', surname: 'Javed', age: 21, })
+// console.clear()
+
+//Concepts related to Var, Let and Const
+
+// var greetings;                          //You can declare it without initializing
+// greetings = 'Hey Hello';
+// greetings = 'How u'                     // by var, Variables can be reassigned
+// var greetings = 'Are you feeling well?'         //var can also be redeclared
+// console.log(greetings)
+
+// let nmbr;                                       //You can declare let without initializing it at first place
+// nmbr = 39;
+
+// nmbr = 89;                                      // let can be reassinged
+// let nmbr = 34;                                  //With let the variable can't be redeclared
+// console.log(nmbr)    
+
+// const me;                                         //Const can not be only declared, it needs to be initialized
+// me = 'almas';
+
+// const me = 'My name is Almas';
+// me = 'My surname is Javed';                         // with const keyword, a variable can't be reassigned
+// const me = 'My full name is Almas Javed'            //nor can it be redeclared
+// console.log(me)
+
+// but if we use const for array or object, we can change any value inside them without changing the whole.
+
+// const person = {
+//         english : 35,
+//         maths : 45,
+//         computerSc : 56
+// }
+// person.english = 89;
+// person.computerSc = 78;
+// console.log(person)
+
+// const series = ['English', 'Mathimatics', 'CompSc', 'Urdu']
+// series[0] = 'PakStudies';
+// series[3] = 'Coding';
+// console.log(series)
+
+
+// Concepts Related to DataTypes
+
+// Premitive DataTypes
+
+// integers
+// let nmbr = 23;
+
+// // strings
+// let str = 'i am Luckiest';
+
+// //boolean
+// let bool = false;
+
+// //null
+// let nl = null                                   // in javascript null is always shown as obect
+
+// //undefined
+// let name;                              //not assigning any value to the variable showsits datatype as undeined
+
+// //symbols
+// const sym = Symbol()
+// console.log(typeof(sym)
+
+//Referencial DataType
+
+//Array
+// const interests = ['Coding', 'Skating', 'Cycling','Being Busy'];
+
+// //Objects
+// const me = {
+//         love1: 'Skating',
+//         love2: 'Stretching',
+//         love3: 'Being Busy in something Productive'
+// }
+
+// //functions
+// let date = new Date();
+// console.log(date)
+// console.log(typeof(date))
+
+// Concepts Related to typeConversion
+
+// let val1 = 56;
+// let val2 = 9;
+
+// let val3 = val2.toString();
+// let bool = (true).toString();
+
+// let any = {
+//         brand: 'Nike',
+//         nmbr: 37,
+//         year: 2017
+// }
+
+// console.log(typeof(val1+val3))
+// console.log(any)
+// console.log(typeof(any))
+// console.log(typeof(any.toString()))
+
+// let aye = new Date();
+
+// console.log(aye)
+// console.log(typeof(aye))
+// console.log(aye.toString())
+// console.log(typeof(aye.toString()))
+
+// var greetings = 'Hello';
+
+// console.log(greetings)
+// console.log(Number(greetings))
+
+// var z = Number('6.90')
+// console.log(z)
+// console.log(typeof(z))
+// console.log(z.toFixed())
+
+
+// var value = 50;
+
+// console.log(Math.sqrt(value))
+// console.log(Math.abs(-7))
+// console.log(Math.pow(2, 3))
+// console.log(Math.min(23,34,17,20,4,67))
+// console.log(Math.max(23,34,17,20,4,67))
+// console.log(Math.ceil(2.1))
+// console.log(Math.round(6.6))
+// console.log(Math.floor(2.8))
+// console.log(Math.PI) 
+// console.log(Math.E)
+// console.log(Math.floor(Math.random()*20 + 1))                         //if you want it to be greater then 1 and less than 20 
+//                                                 //Then multipy it with 20 and add 1 to it 
+
+// Concepts Related to String methods
+
+// // concatination
+var pehlaName = 'asma ';
+var muxaName = 'Ul';
+var akherName = 'HUSNA';
+var ray = 'i am more than happy today'
+
+// name = pehlaName + ' ' + muxaName + ' ' + akherName;
+// //Append
+
+// pehlaName +=  muxaName + ' ' + akherName;
+// console.log(pehlaName);
+// //Escap
+
+// var sen = 'it\'s very exciting let\'s wait for it'            //to disable the strength of single qoute here we use backslash before single qoutes
+// sen = "it's very exciting let's wait for it"                 // another way is to use double qoutes
+
+// let main = muxaName.concat(` ${akherName}`)
+// console.log(pehlaName.concat(`${main}`))
+
+// console.log(pehlaName.indexOf('s'))
+// console.log(pehlaName.lastIndexOf('a'))
+console.log(pehlaName.toUpperCase());
+console.log(akherName.toLowerCase());
+console.log(muxaName.charAt(0));
+console.log(pehlaName.substring(0,3))                     //will show letters upto 3rd index nut not 3rd index
+console.log(pehlaName.slice(-4))                //the difference between slice and substring is that slice doen't accept negatove values
+console.log(pehlaName.slice(0,3))
+console.log(ray.split(' '))
+console.log(ray.replace('happy', 'excited'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
