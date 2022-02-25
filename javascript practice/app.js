@@ -460,7 +460,7 @@
 // Fulfilled. Example is below
 
 
-// document.write(`Below, I write what make me humane<br>`)
+// document.write(`Below, I write what makes me humane<br>`)
 // for (let nmb = 1; nmb <=7; nmb++) {
 //         if (nmb===1) {
 //                 document.write(`${nmb}.  Empathy<br>`);
@@ -478,7 +478,7 @@
 //                 document.write(`${nmb}.  Empathy<br>`);
 //                 continue;
 //         }else if(nmb===6) {
-//                 document.write(`${nmb}.  Stop here, Go further... ;(<br>`);
+//                 document.write(`${nmb}.  Stop here, Go no further... ;(<br>`);
 //                 break;
 //         }else if(nmb===7) {
 //                 document.write(`${nmb}.  Empathy<br>`);
@@ -704,11 +704,11 @@
 
 // Concepts Related to String methods
 
-// // concatination
-var pehlaName = 'asma ';
-var muxaName = 'Ul';
-var akherName = 'HUSNA';
-var ray = 'i am more than happy today'
+ // // concatination
+// var pehlaName = 'asma ';
+// var muxaName = 'Ul';
+// var akherName = 'HUSNA';
+// var ray = 'i am more than happy today'
 
 // name = pehlaName + ' ' + muxaName + ' ' + akherName;
 // //Append
@@ -725,14 +725,335 @@ var ray = 'i am more than happy today'
 
 // console.log(pehlaName.indexOf('s'))
 // console.log(pehlaName.lastIndexOf('a'))
-console.log(pehlaName.toUpperCase());
-console.log(akherName.toLowerCase());
-console.log(muxaName.charAt(0));
-console.log(pehlaName.substring(0,3))                     //will show letters upto 3rd index nut not 3rd index
-console.log(pehlaName.slice(-4))                //the difference between slice and substring is that slice doen't accept negatove values
-console.log(pehlaName.slice(0,3))
-console.log(ray.split(' '))
-console.log(ray.replace('happy', 'excited'))
+// console.log(pehlaName.toUpperCase());
+// console.log(akherName.toLowerCase());
+// console.log(muxaName.charAt(0));
+// console.log(pehlaName.substring(0,3))                     //will show letters upto 3rd index nut not 3rd index
+// console.log(pehlaName.slice(-4))                //the difference between slice and substring is that slice doen't accept negatove values
+// console.log(pehlaName.slice(0,3))
+// console.log(ray.split(' '))
+// console.log(ray.replace('happy', 'excited'))
+
+//concepts related to array Methods
+
+let fruits, nmbr, intrests, subjects, saman;
+
+// fruits = ['Apple', 'Orange', 'Guava', 'Pear', 'Mango'];
+// nmbr = [45,23,26,13,1,35,56,9,0];
+// intrests = ['observing', 'writting', 'sports', 'physical fitness']
+
+//Array Methods find and filter
+subjects = [
+        {id : 1, name : 'Maths', marks : 89},
+        {id : 2, name : 'English', marks : 58},
+        {id : 3, name : 'computer Sciences', marks : 90},
+        {id : 4, name : 'urdu', marks : 67},
+        {id : 5, name : 'G-Studies', marks : 78},
+]
+// let val = subjects.find((item)=>item.id === 1)          //Array find Method
+// val = subjects.filter((item)=>item.id <== 4)            //Array filter Method
+
+// console.log(val)
+
+//forEah Method
+// forEach method executes the fucntion for each item individally.
+subjects.forEach((item)=>{
+        // console.log(`i love ${item.name} subject`)
+        console.log(`i got ${item.marks} in ${item.name}`)
+})
+
+
+//map method of array
+
+ saman = ['grocery', 'toys', 'stationay']
+val = saman.map((item)=>item.length)
+
+alert(val);
+
+val = subjects.map((item)=>item.name.length)
+
+alert(val)
+
+
+// // inserting somwthing to array
+// fruits[3] = 'Banana';
+
+// console.log(fruits)
+
+
+// //Finding out if is array
+// let val = Array.isArray(nmbr);
+
+// //Finding out the value
+// val = fruits[4];
+
+// //Finding the indexOF
+// val = intrests.indexOf('sports')
+
+// console.log(val)
+// //Add at the end
+// intrests.push('Skating')
+
+// //Addong at front
+// intrests.unshift('Stretching')
+
+// //Removing from end
+// intrests.pop();
+
+// //Removing from front
+// intrests.shift();
+
+// console.log(intrests)
+
+// //splice
+// // nmbr.splice(1,5)                //wil delete values fro index 1 to 4 leaving 5.
+// // nmbr.splice(0,2)
+// nmbr.splice(-3)                        //will delete last three
+
+// console.log(nmbr)
+
+// //Replacing
+// fruits.reverse();
+
+// console.log(fruits)
+
+// //Concating 
+// val = nmbr.concat(fruits)
+
+// //sorting the array
+// val = intrests.sort();                          //its sorrted the array in alphabetical order.
+// val = nmbr.sort();                              // it sorts according to the first digit
+
+// console.log(val)
+
+// Concepts related to Date object
+
+// let date = new Date();
+// let birthday = new Date('March 14 2000')                      //These are how you can mentions the date
+// birthday = new Date('3/14/2000 11:23:34')
+// birthday = new Date('3-14-2000 12:34:56')
+
+// let show = date.getFullYear();
+// show = date.getDay();                   //it shows days in index form which start from sunday as zero, thus 
+//                                         //5 as friday
+// show = date.getDate();                   //Shows date
+// show = date.getMonth();                 //shows month in index form where 2 means Feburary
+// show = date.getHours();                  //Shows the exact hour
+// show = date.getMinutes();       
+// show = date.getSeconds();               //it changes with each refresh as the second keeps on changing
+// show = date.getTime();
+// show = date.getMilliseconds()                 //it also keeps on changing with each refresh              
+
+// console.log(date);
+// console.log(show);
+// console.log(birthday)
+
+
+// Concepts Related to Object Literals
+
+// const khoshRoy = {
+//         kainat : 'Nanik',
+//         dunya : 'Mam',
+//         khosh : 'Ghot',
+//         ONE : 'Self',
+//         age : 21,
+//         // getBirthyear: function(){
+//         //         return 2000
+//         // }
+//         getBirthyear: function(){
+//              return 2022 - this.age;
+//          }
+
+// }
+// khoshRoy.ONE = "ME"                             //this is how you change the value of a property
+// let ye = khoshRoy['dunya']                      //this is the other way of getting a specific property
+//     ye = khoshRoy.getBirthyear()        
+
+// console.log(khoshRoy)
+//  console.log(khoshRoy.khosh)
+//  console.log(ye)
+
+
+// Concepts Related to if Statements
+
+// If Statement
+// let marks = +prompt(`Enter your intermediate marks to confirm your position.`)
+
+// if (marks >= 65 && marks <= 100) {
+//         document.write(`You are in`)
+// }
+
+
+// // If else Statement
+// let marks = +prompt(`Enter your intermediate marks to confirm your position.`)
+
+// if (marks >= 65 && marks <= 100) {
+//         document.write(`You are in`)
+// }else{
+//         document.write(`SORRY! You are off`)
+// }
+
+
+// else if statement
+
+// let grade = +prompt(`Enter your grade`)
+
+// if (grade >=90 && grade <=100) {
+//         console.log(`Bravo! You are Brilliant`)
+// } else if(grade >=80 && grade <=89) {
+//         console.log(`Excellent`)
+// } else if(grade >=70 && grade <=79) {
+//         console.log(`You are in Merit`)
+// } else if(grade >=60 && grade <=69) {
+//         console.log(`You are in, but work harder`)
+// } else if(grade >=50 && grade <=59) {
+//         console.log(`You will be Considered`)
+// } else if(grade >=40 && grade <=49) {
+//         console.log(`Apply next time with improved grades`)
+// }else{
+//         console.log(`SORRY! You are off`)
+// }
+
+
+// Switch Statement
+// let day = +prompt(`Enter a numbe upto 6`)
+
+// switch (day) {
+//         case 0: 
+//                alert(`Today is Sunday`) 
+//         break;
+//         case 1: 
+//                 alert(`Today is Monday`) 
+//         break;
+//         case 2: 
+//                 alert(`Today is Tuesday`) 
+//         break;
+//         case 3: 
+//                 alert(`Today is Wednesday`) 
+//         break;
+//         case 4: 
+//                 alert(`Today is Thursday`) 
+//         break;
+//         case 5: 
+//                 alert(`Today is Friday`) 
+//         break;
+//         case 6: 
+//                 alert(`Today is Saturday`) 
+//         break;
+//         default:
+//                 alert(`Enter a Valid Number`)
+//         break;
+// }
+
+
+// Concepts related to Function
+
+// Function Declaration
+
+// function saying() {
+//         document.write(`I say "Hello"`)
+// }
+
+// saying();
+
+                                                // ......OR......
+// function saying() {
+//         return 'I say "Hello"'
+// }                                               
+// let valGoes = saying();
+// document.write(valGoes)
+
+                                                //......OR........
+// var a, b, c;
+// function sumIt(a = 34, b = 23) {
+//         return a + b;
+// }
+// c = sumIt(89, 90);                      //if you don't pass any value it will take the default values
+
+// document.write(`The sum of a and b is ${c}`)
+
+
+// Function Expression 
+// var greeting = function () {
+//         return "Nice to meetcha"
+// }                                          //First declared the variable, then it is initialized by assigning function to it as a value
+// let write = greeting();
+
+// document.write(write)
+
+// (
+//         function(){
+//                 console.log("welome............") 
+//         }
+//         ()
+// )
+ 
+
+// Concepts related to Arrow function
+// Arrow Function is a concise form of arrow function, syntax is below
+// you don't need to  wite function keyword, fucntion name and put the braces, just use arrow sign instead of return
+
+// let pro = (a, b)=>a * b;
+
+// console.log(pro(4, 6))
+
+// Concepts related to foreach method of array
+
+// let names = ["sara","ali","irfan"]
+
+// names.forEach((item)=>{
+//         console.log(`This is ${item}`)
+// })
+
+// let hobbies = ["Coding", "Running", "Sleeping", "Waking up"]
+
+// hobbies.forEach((see)=>{
+//         console.log(`I Love ${see}`) 
+//         }
+// )
+
+
+// concepts Related to CallBack Fucntion
+//CallBack function is the fucntion that is passed to another function as an argument.
+// let a, b;
+// let here = (a = 3, b = 5)=> (b + a);
+
+// let sum, dig, pig;
+// let now = function (dig, pig){
+//       sum = dig * pig;
+//       return `${pro} is the value you get after calculation`;  
+// }
+
+// console.log(3,here())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// array helper methods
+// Map,forEach,filter,reduce,sort()
+
+
+
+ 
+
 
 
 
