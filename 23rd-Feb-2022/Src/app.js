@@ -95,7 +95,7 @@ const anArray = [
 
 for (let i = 0; i < anArray.length; i++) {
 
-            
+        console.log(anArray[i].location);
     
 }
 

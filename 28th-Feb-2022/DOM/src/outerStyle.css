@@ -1,0 +1,5 @@
+.shadow-lg:hover{
+    transform: translateY(0.3rem);
+    transition: 0.7s;
+    cursor: pointer;
+}
