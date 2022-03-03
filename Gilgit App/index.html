@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gilgit App</title>
+</head>
+<body>
+                            <!-- Navigation Bar goes here -->
+    <nav class=" mx-[10rem] fixed inset-x-0 text-sm " style="background-color:white; z-index: 90;">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                      <!-- logo -->
+                     <div>
+                         <a href="https://gilgit.app/" class="flex items-center py-3 hover:curser">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                              </svg>
+                              <span class="font-bold">GilgitApp</span>
+                         </a>
+                     </div>
+                     <!-- primary nav -->
+                     <div class="flex items-center space-x-3">
+                         <select name="" id="" class="px-3 py-[0.5rem] border border-gray-300 rounded bg-transparent">
+                             <option value="">Popular Cities</option>
+                             <option value="1">Gilgit</option>
+                             <option value="2">Karachi</option>
+                             <option value="3">Lahore</option>
+                             <option value="4">Rawalpindi</option>
+                             <option value="5">Peshawar</option>
+                             <option value="6">Islamabad</option>
+                             <option value="7">Quetta</option>
+                         </select>
+                         <div class="border border-gray-300 rounded px-3 py-[0.5rem]">
+                            <label for="" class="flex"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                 </svg>
+                                 </a>
+                                 <input type="text" placeholder="Find Cars, Bikes, Laptops etc." class="bg-transparent ml-[1rem] outline-none ">
+                             </label>
+                         </div>
+                     </div>
+                     
+                                        <!-- secondary nav -->
+                    <div class="flex items-center space-x-5 pl-[21rem]">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 border rounded-full bg-white-200 p-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="" class="font-bold">Sign in</a>
+                        <a href="" class="border border-black bg-black text-white font-bold px-1 py-1 rounded">Sell Now</a>
+                    </div>
+                </div>                
+                
+            </div>
+        </div>
+        <hr>
+    </nav>
+      
+
+                <!-- Offers wala section goes here -->
+
+    <div class="flex ml-[10rem] pt-[3.5rem] text-sm">
+        <select name="" id="" class="space-x-4 bg-transparent font-extrabold">
+            <option value="">Cars</option>
+            <option value="1">Toyota</option>
+            <option value="2">Suzuki</option>
+            <option value="3">Mitsubishi</option>
+            <option value="4">Nissan</option>
+            <option value="5">Honda</option>
+            <option value="6">Hyundai</option>
+        </select>
+        <select name="" id="" class="space-x-3 bg-transparent font-extrabold">
+            <option value="">Bikes</option>
+            <option value="1">Honda</option>
+            <option value="2">Suzuki</option>
+            <option value="3">Unique</option>
+            <option value="4">United</option>
+            <option value="5">Yamaha</option>
+        </select>
+        <select name="" id="" class="mx-5 bg-transparent font-extrabold">
+            <option value="">Properties</option>
+            <option value="1">Homes</option>
+            <option value="2">Plots</option>
+            <option value="3">Offices</option>
+        </select>
+        <select name="" id="" class="space-x-5 bg-transparent font-extrabold">
+            <option value="">Laptops</option>
+            <option value="1">Dell</option>
+            <option value="2">hp</option>
+            <option value="3">Toshiba</option>
+            <option value="4">Lenovo</option>
+            <option value="5">Mcbook</option>
+        </select>
+        <select name="" id="" class="space-x-4 bg-transparent font-extrabold">
+            <option value="">Mobiles</option>
+            <option value="1">iPhones</option>
+            <option value="2">Samsung</option>
+            <option value="3">Oppo</option>
+            <option value="4">One Plus</option>
+            <option value="5">Vivo</option>
+            <option value="6">Infinix</option>
+            <option value="7">Realme</option>
+        </select>
+        <h1 class="mt-3 mx-4 p-2 font-bold bg-transparent">Appliances</h1>
+        <select name="" id="" class="m-4 p-2 bg-transparent font-extrabold">
+            <option value="">More</option>
+            <option value="1">Pets</option>
+            <option value="2">Furniture</option>
+        </select>
+        
+    </div>
+
+            <!-- Car wala section goes here -->
+
+    <div class="flex mx-[10rem] p-9 font-sans text-sm" style="background-color: #ececec;">
+        <div class="p-7 pl-[7rem]">
+            <h1 class="font-bold text-4xl">GilgitApp</h1><br><br>
+            <h2 class="font-bold text-4xl leading-10">Get featured here</h2><br>
+            <p class="font-bold">Get Featured and sell fast <br><span class="font-thin">Contact Us</span></p>
+        </div>
+        <div class="ml-10 mr-0">
+            <img src="images/komoro2.JPG" alt="" class="w-11/12 h-[19rem] ml-[5rem]">
+        </div>
+    </div>
+
+                <!-- Products wala sections goes here -->
+
+
+                        <!-- (Main Products) -->
+    <div class="flex mx-[10rem] text-sm">
+        <div class="mr-8 w-2/3">
+            <h2 class="ml-5 text-2xl">Most Recent Items</h2>            
+                <div class="m-2 hover:border border-solid border-dark-300 shadow-blue-200">
+                      <div>
+                         <img src="images/11.JPG" alt="" class="mb-3 w-11/12">
+                      </div>
+                       <div class="">
+                          <span class="flex"><h1 class="mr-10 pr-10 text-3xl font-semibold">PKR 26,000</h1> <p class="pl-10">2 months ago</p></span>
+                             <br>
+                          <h2 class="font-semibold text-xl">Mobile Phone</h2>
+                          <h5>Karachi, Karachi City, Sindh</h5>    
+                      </div>
+                </div>      
+                    
+                <div class="m-2 hover:border border-solid border-dark-300 shadow-blue-200">
+                      <div>
+                         <img src="images/10.JPG" alt="" class="mb-3 w-11/12">
+                      </div>
+                       <div>
+                          <span class="flex"><h1 class="mr-10 pr-10 text-3xl font-semibold">PKR 26,000</h1> <p class="pl-10">2 months ago</p></span>
+                             <br>
+                          <h2 class="font-semibold">Mobile Phone</h2>
+                          <h5>Karachi, Karachi City, Sindh</h5>    
+                      </div>
+                </div>             
+                    
+                <div class="m-2 hover:border border-solid border-dark-300 shadow-blue-200">
+                      <div>
+                         <img src="images/13.JPG" alt="" class="mb-3 w-11/12">
+                      </div>
+                       <div>
+                          <span class="flex"><h1 class="mr-10 pr-10 text-3xl font-semibold">PKR 26,000</h1> <p class="pl-10">2 months ago</p></span>
+                             <br>
+                          <h2 class="font-semibold">Mobile Phone</h2>
+                          <h5>Karachi, Karachi City, Sindh</h5>    
+                      </div>
+                    </div>        
+                       
+                <div class="m-2 hover:border border-solid border-dark-300 shadow-blue-200">
+                      <div>
+                         <img src="images/14.JPG" alt="" class="mb-3 w-11/12">
+                      </div>
+                       <div>
+                          <span class="flex"><h1 class="mr-10 pr-10 text-3xl font-semibold">PKR 26,000</h1> <p class="pl-10">2 months ago</p></span>
+                             <br>
+                          <h2 class="font-semibold">Mobile Phone</h2>
+                          <h5>Karachi, Karachi City, Sindh</h5>    
+                      </div>
+                </div>
+                <div class="m-2 hover:border border-solid border-dark-300 shadow-blue-200">
+                    <div>
+                       <img src="images/19.JPG" alt="" class="mb-3 w-11/12">
+                    </div>
+                     <div>
+                        <span class="flex"><h1 class="mr-10 pr-10 text-3xl font-semibold">PKR 26,000</h1> <p class="pl-10">2 months ago</p></span>
+                           <br>
+                        <h2 class="font-semibold">Mobile Phone</h2>
+                        <h5>Karachi, Karachi City, Sindh</h5>    
+                    </div>
+              </div>
+              <div class="m-2 hover:border border-solid border-dark-300 shadow-blue-200">
+                    <div>
+                        <img src="images/20.JPG" alt="" class="mb-3 w-11/12">
+                    </div>
+                    <div>
+                        <span class="flex"><h1 class="mr-10 pr-10 text-3xl font-semibold">PKR 26,000</h1> <p class="pl-10">2 months ago</p></span>
+                        <br>
+                        <h2 class="font-semibold">Mobile Phone</h2>
+                        <h5>Karachi, Karachi City, Sindh</h5>    
+                    </div>
+               </div>                              
+            
+        </div>
+                            <!-- (Side Products) -->
+        <div class="mt-7 w-1/3 space-y-1 w-6/12" style="position: relative;">
+            <div style="position: sticky; top: 4rem">
+            <a href="https://gilgit.app/details/xiaomi-powerbank/7946">
+                <div class="flex pb-2 mb-1 border border-dark-200">
+                    <div class="w-[10rem] hover:w-[9.5rem]">
+                        <img src="images/laptop1.JPG" alt="" class="w-full">
+                    </div>
+                    <div class="ml-3">
+                        <span class="flex "><h1 class="text-2xl ">PKR 80,000</h1><p class="pl-7">8 days ago</p></span>
+                        <!-- <br> -->
+                        <h2>Acer Aspire 5 Slim</h2>
+                        <h5>15.6 inches Full HD IPS</h5>
+                        <p>Karachi</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://gilgit.app/details/xiaomi-powerbank/7946">
+                <div class="flex pb-2 mb-1 border border-dark-200">
+                    <div class="w-[10rem] hover:w-[9.5rem]">
+                        <img src="images/laptop2.JPG" alt="" class="w-full">
+                    </div>
+                    <div>
+                        <span class="flex "><h1 class="text-2xl">PKR 70,000</h1><p class="pl-7">11 days ago</p></span>
+                        <br>
+                        <h2>Lenovo Ideapad 3 14</h2>
+                        <h5>Intel Pentium Silver N5030</h5>
+                        <p>Karachi</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://gilgit.app/details/huawei-y6s/7101">
+                <div class="flex pb-2 mb-1 border border-dark-200">
+                    <div class="w-[10rem] hover:w-[9.5rem]">
+                        <img src="images/mobile1.JPG" alt="" class="w-full">
+                    </div>
+                    <div class="ml-7">
+                        <span class="flex "><h1 class="text-2xl">PKR 17,000</h1><p class="pl-7">15 days ago</p></span>
+                        <br>
+                        <h2>SAMSUNG Galaxy Z Flip 3 5G</h2>
+                        <h5>Factory Unlocked Android Cell</h5>
+                        <p>Karachi</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://gilgit.app/details/2-kanal-farm-house-plot/4191">
+                <div class="flex pb-2 mb-1 border border-dark-200">
+                    <div class="w-[10rem] hover:w-[9.5rem]">
+                        <img src="images/fridge.JPG" alt="" class="w-full">
+                    </div>
+                    <div>
+                        <span class="flex "><h1 class="text-2xl">PKR 80,000</h1><p class="pl-7">a month ago</p></span>
+                        <br>
+                        <h2>New Air Beverage Refrigerator</h2>
+                        <h5>Cooler with 90 Can Capacity</h5>
+                        <p>Karachi</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://gilgit.app/details/16-modal-honda-125/8533">
+                <div class="flex pb-2 mb-1 border border-dark-200">
+                    <div class="w-[10rem] hover:w-[9.5rem]">
+                        <img src="images/bicycle.JPG" alt="" class="w-full">
+                    </div>
+                    <div>
+                        <span class="flex "><h1 class="text-2xl">PKR 6,000</h1><p class="pl-7">8 days ago</p></span>
+                        <br>
+                        <h2>Mongoose Status Mountain</h2>
+                        <h5>Aluminium Frame, Multiple Colors</h5>
+                        <p>Karachi</p>
+                    </div>
+                </div>
+            </a>
+           
+                    <!-- GilgitApp in playstore -->
+            <a href="https://play.google.com/store/apps/details?id=com.gilgitapp&hl=en&gl=US">
+                <div class="m-9">
+                    <h1 class="text-xl font-bold">Download App Now</h1>
+                    <button class="border border-black rounded-3xl px-8 mt-5 font-bold text-white bg-black hover:bg-blue-900 outline-none">Get it on <br> Google Store</button>
+                </div>
+            </a>     
+        </div>   
+        </div>
+    </div>
+
+            <!-- Catagories wala section goes here -->
+
+    <div class="flex justify-between mx-8 my-[4rem] px-[14rem] text-sm">
+        <div>
+            <a href="https://gilgit.app/" class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                  </svg>
+                  <span class="font-extrabold text-2xl pt-3">GilgitApp</span>
+            </a>         
+        </div>
+        <div>
+            <h1 class="font-bold pb-2">Catagories</h1>
+            <li class="list-none text-zinc-700">
+                <ul>Vehicals</ul>
+                <ul>Bikes</ul>
+                <ul>Properties</ul>
+                <ul>Mobiles</ul>
+                <ul>Laptops</ul>
+                <ul>Furniture</ul>
+                <ul>Stationary</ul>
+                <ul>Appliances</ul>
+            </li>
+        </div>
+        <div>
+            <h1 class="font-bold pb-2">Trending Searches</h1>
+            <li class="list-none text-zinc-700">
+                <ul>iPhone</ul>
+                <ul>Vivo</ul>
+                <ul>Redmi</ul>
+                <ul>Honda</ul>
+                <ul>Toyota</ul>
+            </li>
+        </div>
+        <div>
+           <h1 class="font-bold pb-2">Popular</h1>
+            <li class="list-none text-zinc-700">
+                <ul>Premio</ul>
+                <ul>Vitz</ul>
+                <ul>Honda</ul>
+                <ul>Plots</ul>
+                <ul>Passo</ul>
+            </li>
+        </div>
+    </div>
+
+                <!-- Footer wala section goes here -->
+
+    <div class="mx-[10rem] pr-[1rem] border text-sm">
+        <div class="pt-[2rem] flex float-right pb-[1rem]">
+            <p class="pr-[2rem]">Copyright@2022 GilgitApp. All Right Reserved.</p>
+            <a href="https://gilgit.app/privacy" class="text-indigo-800 pr-[1rem]">Privacy Policy</a>
+            <a href="https://gilgit.app/terms" class="text-indigo-800">Terms and Conditions</a>
+        </div>
+        
+    </div>
+    
+    <script src="js/web.js"></script>
+</body>
+</html>

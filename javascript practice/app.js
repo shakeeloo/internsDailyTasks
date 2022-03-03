@@ -498,12 +498,12 @@
 // console.log(mydata[0].name);
 
 // for(let i of mydata){                   //i represents each object in the Array, using this syntax with of
-//     console.log(i);                     //gets the entire object.
+//     console.log(i);                    //gets the entire object.
 // }
 
-//for(let i of mydata){                   //i represents each object in the Array, using this syntax with of
+// for(let i of mydata){                   //i represents each object in the Array, using this syntax with of
 //    console.log(i.education);           // and by using the property name we can get that specific property.
-//}
+// }
 
 // for(let i in mydata){                       //i represents each object in the Array, using this syntax with in
 //         console.log(i);                     //gets the the indeces only
@@ -527,7 +527,7 @@
 //         console.log(`Enter any string or a number`)
 // }
 
-                        // ********** Alert***********
+                        // ********** Alert********
 //Alert Prints a message in the mini window that pops up at the top of the browser.The pop up disapears as ok
 // button is pressed
 
@@ -734,22 +734,22 @@
 // console.log(ray.split(' '))
 // console.log(ray.replace('happy', 'excited'))
 
-//concepts related to array Methods
+                //..........concepts related to array Methods.............
 
-let fruits, nmbr, intrests, subjects, saman;
+// let fruits, nmbr, intrests, subjects, saman;
 
 // fruits = ['Apple', 'Orange', 'Guava', 'Pear', 'Mango'];
 // nmbr = [45,23,26,13,1,35,56,9,0];
 // intrests = ['observing', 'writting', 'sports', 'physical fitness']
 
 //Array Methods find and filter
-subjects = [
-        {id : 1, name : 'Maths', marks : 89},
-        {id : 2, name : 'English', marks : 58},
-        {id : 3, name : 'computer Sciences', marks : 90},
-        {id : 4, name : 'urdu', marks : 67},
-        {id : 5, name : 'G-Studies', marks : 78},
-]
+// subjects = [
+//         {id : 1, name : 'Maths', marks : 89},
+//         {id : 2, name : 'English', marks : 58},
+//         {id : 3, name : 'computer Sciences', marks : 90},
+//         {id : 4, name : 'urdu', marks : 67},
+//         {id : 5, name : 'G-Studies', marks : 78},
+// ]
 // let val = subjects.find((item)=>item.id === 1)          //Array find Method
 // val = subjects.filter((item)=>item.id <== 4)            //Array filter Method
 
@@ -757,22 +757,35 @@ subjects = [
 
 //forEah Method
 // forEach method executes the fucntion for each item individally.
-subjects.forEach((item)=>{
-        // console.log(`i love ${item.name} subject`)
-        console.log(`i got ${item.marks} in ${item.name}`)
-})
+// subjects.forEach((item)=>{
+//         // console.log(`i love ${item.name} subject`)
+//         console.log(`i got ${item.marks} in ${item.name}`)
+// })
+// let we = [
+//         {id : 1, name : 'Ruby'},
+//         {id : 2, name : 'Husna'},
+//         {id : 3, name : 'Almas'},
+//         {id : 4, name : 'Yusra'}
+// ]
+// we.forEach((item)=>{
+//         console.log(`Papa Loves ${item.name}`)
+//         console.log(`Mama Loves ${item.name}`)
+// })
 
 
 //map method of array
 
- saman = ['grocery', 'toys', 'stationay']
-val = saman.map((item)=>item.length)
+// let write = we.map((item)=>item.name.length)
 
-alert(val);
+// alert(write)
+//  saman = ['grocery', 'toys', 'stationay']
+// val = saman.map((item)=>item.length)
 
-val = subjects.map((item)=>item.name.length)
+// alert(val);
 
-alert(val)
+// val = subjects.map((item)=>item.name.length)
+
+// alert(val)
 
 
 // // inserting somwthing to array
@@ -856,15 +869,19 @@ alert(val)
 //         dunya : 'Mam',
 //         khosh : 'Ghot',
 //         ONE : 'Self',
+//          name : 'Almas',
 //         age : 21,
 //         // getBirthyear: function(){
 //         //         return 2000
 //         // }
-//         getBirthyear: function(){
-//              return 2022 - this.age;
-//          }
+//         // getBirthyear: function(){
+//         //      return 2022 - this.age;
+//         //  }
+// };
 
-// }
+// let key = prompt(`What do you wanna know about `,'name');
+// document.write(khoshRoy[key])
+
 // khoshRoy.ONE = "ME"                             //this is how you change the value of a property
 // let ye = khoshRoy['dunya']                      //this is the other way of getting a specific property
 //     ye = khoshRoy.getBirthyear()        
@@ -945,6 +962,39 @@ alert(val)
 //         break;
 // }
 
+//Concepts Related to Objects
+
+// objects have two method of declaration,
+// let fav = {
+//         homechore : 'Cleaning',
+//         sports : {
+//                 'one' : 'skating',
+//                 'two' : 'cycling',
+//                 'three' : 'workouts'
+//         },
+//         other : function(){
+//                 return this.sports.one + ', ' + this.sports.two
+//         },
+//         else : 'stretching'
+// }
+
+// let fav = new Object()
+//         fav.firstName = 'Almas',
+//         fav.lastName = 'Javed',
+//         fav.sports = {
+//                 'one' : 'skating',
+//                 'two' : 'cycling',
+//                 'three' : 'workout'
+//         },
+//         fav.other = function(){
+//                 return this.sports.one + ', ' + this.sports.three
+//         },
+//         fav.else = 'Stretching'
+
+
+// console.log(fav)
+// console.log(fav.other())
+
 
 // Concepts related to Function
 
@@ -997,7 +1047,8 @@ alert(val)
 
 // console.log(pro(4, 6))
 
-// Concepts related to foreach method of array
+
+// Concepts related to foreach method of array          //it allows function to run for each value the array
 
 // let names = ["sara","ali","irfan"]
 
@@ -1012,6 +1063,11 @@ alert(val)
 //         }
 // )
 
+// let routine = ['office', 'salon', 'learning']
+
+// routine.forEach((it)=>{
+//         console.log(`I do ${it} everyday`)
+// })
 
 // concepts Related to CallBack Fucntion
 //CallBack function is the fucntion that is passed to another function as an argument.
@@ -1023,6 +1079,13 @@ alert(val)
 //       sum = dig * pig;
 //       return `${pro} is the value you get after calculation`;  
 // }
+
+// concepts related to Sort(fn)
+
+// let sis = ['ruby', 'husna', 'almas', 'yusra']
+
+// // alert(sis.sort())
+// alert(sis.includes('ruby', 2))
 
 // console.log(3,here())
 
