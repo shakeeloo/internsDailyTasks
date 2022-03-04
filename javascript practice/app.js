@@ -772,9 +772,22 @@
 //         console.log(`Mama Loves ${item.name}`)
 // })
 
+let sis = [
+        {id : 1, name : 'Ruby'},
+        {id : 2, name : 'Asma'},
+        {id : 3, name : 'Almas'},
+        {id : 4, name : 'Yusra'}
+]
+// sis.forEach((item)=>{
+//         console.log(`Papa Loves ${item.name}`)
+// })
+
 
 //map method of array
 
+
+sis.map((item)=>item.name.length)
+alert(item)
 // let write = we.map((item)=>item.name.length)
 
 // alert(write)
