@@ -785,9 +785,6 @@ let sis = [
 
 //map method of array
 
-
-sis.map((item)=>item.name.length)
-alert(item)
 // let write = we.map((item)=>item.name.length)
 
 // alert(write)

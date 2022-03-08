@@ -116,7 +116,7 @@
 
 // var eVent = document.querySelector("#footer")
 // var eVent2 = document.querySelector("#section")
-var eVent3 = document.querySelector("#nav")
+// var eVent3 = document.querySelector("#nav")
 
 // eVent.onclick = abc;
 
@@ -205,5 +205,96 @@ var eVent3 = document.querySelector("#nav")
 
 
 
+                //...............Replacing a DOM element.............
 
-// console.log(button)
+// const extisting = document.querySelector('li.hobbies')
+
+// const newHob = document.createElement("li")
+// newHob.appendChild(document.createTextNode("Learning"))
+
+// const list = document.querySelector('ul.list')
+// list.replaceChild(newHob, extisting)
+
+                //...........Again (Correct this ).........
+const parent = document.querySelectorAll('#new')[1]
+
+const oldOne = parent.querySelector('ul.list:first-child')
+
+const newOne = document.createElement('li')
+newOne.appendChild(document.createTextNode('Taking the medicines'))
+
+parent.replaceChild(newOne, oldOne)
+
+console.log(parent)
+console.log(oldOne)
+
+                //...........Removing DOM element..............
+
+// const parent = document.querySelector('#new')
+
+// const toRem = parent.children[0];
+
+// parent.removeChild(toRem)
+
+// console.log(toRem)
+                    //...........Again
+
+// const exis = document.querySelector('.list')
+// const rem = exis.children[1];
+// exis.removeChild(rem)
+
+// console.log(exis)
+// console.log(rem)
+// console.log(exis.children)
+
+
+                //...........Inserting a new value to the DOM value...........
+
+
+
+
+
+
+
+                //..............Dealing with Classes abd Attributes...........
+
+// const lis = document.querySelector('li.hobbies:first-child')
+// link = lis.innerHTML = document.createElement('a')
+// link.setAttribute('href','https://gilgit.app/')
+// link.className = 'flex items-center py-3 hover:curser';
+// link.setAttribute('title','gilgitApp')
+// let val;
+// val = link.hasAttribute('title')
+// link.removeAttribute('title')
+// link.classList.add('task')
+// link.classList.remove('flex')
+
+
+
+// console.log(lis)
+// console.log(link)
+// console.log(val)
+// console.log(link.classList)
+                            //...........AGIAN...............
+
+// const makeIt = document.querySelector('div.city-portion:first-child')
+// head = makeIt.querySelector('h1')
+// nogh = head.innerHTML = document.createElement('span')
+// nogh.appendChild(document.createTextNode('...........Capital City of Britain'))
+// nogh.setAttribute("style", "color : blue")
+// nogh.setAttribute('href','https://www.lesmills.com/ae/')
+// let val;
+// val = nogh.hasAttribute('style');
+// val = nogh.hasAttribute('class')
+// nogh.classList.add('this')
+// nogh.className = " that their them"
+// nogh.removeAttribute('href')
+// nogh.classList.remove('their')
+
+
+// // console.log(makeIt)
+// // console.log(head)
+// console.log(nogh)
+// console.log(val)
+// console.log(nogh.classList)
+

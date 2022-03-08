@@ -49,15 +49,15 @@
 
 }
 #new{
-    background-color: cornflowerblue;
+    background-color: black;
     padding: 1.5rem;
-    color: darkblue;
+    color: gray;
     line-height: 1.5rem;
+    margin-top: 2px;
 }
 #new ul{
-    border: 2px solid darkslategray;
-    width: 20%;
     padding-bottom: 20px;
+    font-weight: bold;
 }
                 /* Form */
 /*.container-2{
