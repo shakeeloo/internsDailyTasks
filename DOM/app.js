@@ -216,19 +216,19 @@
 // list.replaceChild(newHob, extisting)
 
                 //...........Again (Correct this ).........
-const parent = document.querySelectorAll('#new')[1]
+// const parent = document.querySelectorAll('#new')[1]
 
-const oldOne = parent.querySelector('ul.list:first-child')
+// const oldOne = parent.querySelector('ul.list:first-child')
 
-const newOne = document.createElement('li')
-newOne.appendChild(document.createTextNode('Taking the medicines'))
+// const newOne = document.createElement('li')
+// newOne.appendChild(document.createTextNode('Taking the medicines'))
 
-parent.replaceChild(newOne, oldOne)
+// parent.replaceChild(newOne, oldOne)
 
-console.log(parent)
-console.log(oldOne)
+// console.log(parent)
+// console.log(oldOne)
 
-                //...........Removing DOM element..............
+                //...........Removing DOM element.................
 
 // const parent = document.querySelector('#new')
 
@@ -298,3 +298,112 @@ console.log(oldOne)
 // console.log(val)
 // console.log(nogh.classList)
 
+
+                                    //................GOING THROUGH EVENTS IN DETAL..............
+
+        //Event defines that something has happened. To deal with the events and respond to them we use 'handlers' i.e. functions.
+const eventLst = document.querySelectorAll('ul.list')[1]
+const btn = document.querySelectorAll('button')[1]
+const btn2 = document.querySelectorAll('button')[0]
+btn.style.padding = "0.4rem"
+
+// function todo(){
+//     eventLst.setAttribute("style","color:blue")
+// }
+
+// function todo2(){
+//     eventLst.setAttribute("style","background-color:yellow")
+// }
+
+// function btnClk(){
+//     console.log(`This Button Appears on Clicking It`)
+// }
+
+// function dblClk(){
+//     console.log(`This text appears on double clicking it`)
+// }
+
+// console.log(eventLst)
+// console.log(btn)
+
+
+                    // Instead of going back to html file again and again
+                    // we can perform our required task in our js file
+                    //we've got two methods for that
+
+//1st Method goes here.........>
+
+// eventLst.onclick = pqr;
+ 
+// function pqr(){
+//     eventLst.style.color = "red"
+// }
+
+//addEventListner method goes here
+
+// btn.addEventListener("click",abc)
+
+// function abc(){
+//     let n = prompt(`Write something to get the result`)
+//     if (n === null || undefined) {
+//         alert(`This Click was not mine`)
+//     } else {
+//         alert(`I clicked it`)
+//     }
+// }
+        // You can difine function in the parameter wala position also
+
+//Example of Event with Loops
+
+// btn2.addEventListener("mouseenter", function clr() {
+//     this.style.background = "black";
+//     this.style.color = "white";
+// })
+// // 'this' handler defines the element on which event is working
+
+// btn2.addEventListener("click", here)
+// function here(){
+//     for (i = 0; i <= 3; i++) {
+//         alert(i)        
+//     }
+// }
+// btn2.addEventListener("mouseleave", function clr() {
+//     this.style.background = "transparent";
+//     this.style.color = "black";
+// })
+
+
+                        // evnt.type and eventHandler
+
+    // event.type basically tell the type of the event
+    // eventHandler is used when objects need to be handled
+
+// function tuv(){
+//    handleEvent(event){}             //due to 'event being depricated'
+// }                                   // this example remains undone
+// btn2.addEventListener("mouseleave", tuv)
+
+
+// const hob = document.querySelector('li.hobbies:first-child')
+
+// function hide(){
+//     hob.hidden = true;
+// }
+// function show(){
+//     hob.hidden = false;
+// }
+
+// hob.addEventListener("mouseenter", hide);
+// hob.addEventListener("mouseout", show);
+// console.log(hob)
+
+// const btn3 = document.querySelectorAll('button')[1]
+
+// function keys(e){
+//     if(event.ctrlKey && event.altKey){
+//         btn3.innerHTML = "Thank you and go away!"
+//     }
+// }
+
+// btn3.addEventListener("onclick", keys)
+// console.log(btn3)

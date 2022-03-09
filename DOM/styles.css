@@ -59,6 +59,12 @@
     padding-bottom: 20px;
     font-weight: bold;
 }
+#new button{
+    border-radius: 2.2rem;
+    background-color: darkcyan; 
+    color: aliceblue; 
+    outline: none;
+}
                 /* Form */
 /*.container-2{
     background-color: cadetblue;
