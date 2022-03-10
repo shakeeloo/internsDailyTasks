@@ -9,13 +9,39 @@
 </head>
 <body>
     
-    <input type="text" id="todo-list" placeholder="Enter your task for the day">
+    <header>
+        <h1>Task List 2022</h1>    
+      <form id="todo-list">
+        <input type="text" id="todo-input" placeholder="What have you planned for this year?">
+        <input type="submit" value="Add resolution" id="sub">
+    </form>
+    
+    </header>
 
-    <button id="todo-btn">Add your tasks</button>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
 
-    <ul>
-        <li>task 1</li>
-        <li>task 2</li>
-    </ul>
+            <!-- <div id="tasks">
+                <div class="task">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="My resolutions for the year"
+                            readonly
+                            >
+                    </div>
+                    <div class="action">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div> -->
+            
+        </section>
+    </main>
+  
+<script src="file.js"></script>
 </body>
 </html>
