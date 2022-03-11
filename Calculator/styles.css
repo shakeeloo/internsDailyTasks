@@ -1,0 +1,93 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #93979c;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+    --navy:	#000080;
+    --teal:#008080;
+    --blue:	#0000FF;
+    --olive:#808000;
+    --cornflowerblue:#6495ed;
+    --darkcyan:	#008b8b;
+    --cadetblue:#5f9ea0;
+}
+*{
+    background-color: var(--dark);
+    font-family: sans-serif;
+
+}
+.Calculator{
+    background-color: var(--gray);
+    width:320px;
+    height: 580px;
+    position: relative;
+    top: 15px;
+    margin-left: 20rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px black ;
+}
+.result, .input, .output{
+    background-color: var(--gray);
+}
+input{
+    background-color: var(--gray);
+    border: none;
+}
+.result{
+    text-align: right;
+    height: 150px;
+    padding-right: 20px;
+}
+.input{
+    padding-top: 2rem;
+    font-size: 1.35rem;
+}
+.output{
+    font-size: 1.85rem;
+    padding-top: 25px;
+    font-weight: bold;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.12rem;
+}
+.number, .empty{
+    background-color: transparent;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.number:active, .operator:active{
+    font-size: 1rem;
+}
+button:nth-child(4){
+    font-size: 1.3rem;
+    /* background-color: var(--olive); */
+
+}
+button:nth-child(8){
+    font-size: 1.3rem;
+    /* background-color: var(--navy); */
+
+}button:nth-child(12){
+    font-size: 1.3rem;
+    /* background-color: var(--teal); */
+
+}button:nth-child(16){
+    font-size: 1.3rem;
+    /* background-color: var(--purple); */
+
+}button:nth-child(20){
+    font-size: 1.3rem;
+    /* background-color: var(--cornflowerblue); */
+
+}
