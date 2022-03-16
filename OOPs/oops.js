@@ -56,7 +56,7 @@
 // console.log(person_1.relation); 
 // console.log(person_2.relation);   // the output for these codes will be 'male'              
 
-// // Customer constructor
+// // Todo constructor
 
 // function Todo(priority1, priority2) {
 //     this.priority1 = priority1;
@@ -99,12 +99,12 @@ function Visited(firstPlace,secondPlace,thirdPlace,fourthPlace){
     this.thirdPlace = thirdPlace;
     this.fourthPlace = fourthPlace;
 }
-// Get full name
+// getting the date when the journey started
 Visited.prototype.startedJourney = function(){
     return new Date('3-14-2005')
   }
   
-  // Gets Married
+  // Manipulation in site name
   Visited.prototype.changePlace = function(secondPlace){
     this.secondPlace = secondPlace;
   }
