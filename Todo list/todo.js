@@ -2,7 +2,7 @@ window.addEventListener('load', load)
 
 function load(){
     const form = document.querySelector("#todo-list")
-    const input = document.querySelector("#tod0-input")
+    const input = document.querySelector("#todo-input")
     const list_el = document.querySelector("#tasks")
 
     form.addEventListener('submit', (e) => {
