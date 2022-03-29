@@ -1,0 +1,63 @@
+
+ body{
+     position: relative;
+     height: 100vh;
+ }
+.container{
+    position: absolute;
+    left: 27%;
+    top: 20%;
+    border: 1px solid #fff;
+}
+.title{
+    color: #fff;
+}
+#fname{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+#lname{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+#email{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+#password{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+#confirm-ps{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+#date{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+#gendar{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+#gendar option{
+    color: #000;
+}
+
+#submitbtn{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+}
+.showerror{
+    width: 60%;
+    margin-left: 23%;
+    text-align: center;
+}

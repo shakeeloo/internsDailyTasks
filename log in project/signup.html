@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+  <style>
+           .success, .error {
+      color: white;
+      padding: 15px 5px;
+      margin: 10px 0 15px 0;
+    }
+    .success {
+      background: green;
+   
+    }
+    .error {
+      background: rgb(214, 59, 59);
+
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body class="bg-teal-900">
+    <span><a href="index.html"><i class="fa-solid fa-circle-arrow-left  text-3xl p-4" style="color: #fff;"></i></a></span>
+    <div class="container w-1/2" id="saport">
+      <div class="row" id="main">
+          <div class="main-title text-center w-full pb-10 pt-10">
+          <h1 class="title text-4xl border-x-black ">SignUp</h1>
+          </div>
+          <div class="showerror text-center mb-4"></div>
+          <div class="input-group ">
+              <input type="text" name="fname" id="fname" placeholder="FirstName" class="w-1/2 ml-4 p-2">
+              <input type="text" name="lname" id="lname" placeholder="LastName" class="w-1/2 ml-4 mr-4 p-2" >
+          </div>
+          <div class="input-group">
+              <input type="email" id="email" placeholder="Email or Phone Number " class="w-full ml-4 mr-4 mt-4 p-2">
+          </div>
+          <div class="input-group">
+              <input type="password"  id="password" placeholder="Password" class="w-1/2 ml-4 mt-4 p-2" >
+              <input type="password" id="confirm-ps" placeholder="Confirm Password"  class="w-1/2 ml-4 mr-4 mt-4 p-2">
+          </div>
+          <div class="input-group">
+             <input type="date" placeholder="DD/MM/YY" id="date" class="w-2/5 ml-4 mt-4 p-2">
+             <span  class="gendar w-1/2">
+              <select name="gendar" id="gendar" class="w-full ml-4 mt-4 p-2" >
+                  <option value="choose Gendar"> Choose Gendar</option> 
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Custom">Custom</option>
+              </select>
+             </span>
+          </div>
+          <div class="submit text-center w-full pt-10 pb-10">
+              <input type="submit"  id="submitbtn" class="border-x-black">
+          </div>
+       
+          </div>
+          </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
+</body>
+</html>

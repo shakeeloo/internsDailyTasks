@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+        .success, .error {
+      color: white;
+      padding: 15px 5px;
+      margin: 50px 0 15px 0;
+      width: 50%;
+      margin-left: 30%;
+      text-align: center;
+    }
+    .success {
+      background: green;
+   
+    }
+    .error {
+      background: rgb(214, 59, 59);
+
+    }
+    </style>
+    <title>Login project</title>
+</head>
+<body>
+    <section class="home">
+ <div class="container">
+     <div class="login-content">
+         <div class="title flex"><h1 class="heading text-3xl ">Login</h1></div>
+         <div class="errorshower"></div>
+         <form id="login" class="">
+             <div class="input-group pt-5">
+             <label for="email" class="email pr-5">Email</label>
+             <span class="email-logo input-group-addon ml-4">@</span>
+             <input type="email"  id="email" class="pl-3">
+            </div>
+            <div class="input-group pt-5">
+             <label for="password" class="password pr-5">Password</label>
+             <span class="password-logo input-group-addon ">$</span>
+             <input type="password" id="password" class="pl-3 ">
+            </div>
+            <div class="submit-group pt-5 ">
+                <input type="submit" id="submit-Btn" value="Submit" class="btn btn-secondary pl-5 pr-5 bg-lime-600">
+              
+                <div class="create-signup flex text-center">
+                  <li class="hint">No Account <span style="">?</span></li>
+                  <li id="createbtn"><a href="signup.html">Create One <span class="pl-2" >!</span> </a></li>
+                  </div>   
+            </div>
+       
+         </form>
+         <!-- <div class="text-center "><p class="message " style="color: aliceblue;">xfgdgbd</p></div> -->
+        </div>
+ </div>    
+</section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

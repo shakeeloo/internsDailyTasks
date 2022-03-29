@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    font-family: poppins,sans-serif;
+}
+
+header .container .logo-content .fa-apple{
+    font-size: 3rem;
+}
+header .container .logo-content h1{
+ font-size: 1.5rem;
+ font-family: inherit;
+} 
+header .container .location{
+    border: 1px solid #00000029;
+    border-radius: 5px;
+}
+header .container .location .fa-gitlab{
+    font-size: 1rem;
+}
+header .container .products{
+    border: 1px solid #00000029;
+    border-radius: 5px;
+}
+header .container .products .fa-searchengin{
+    font-size: 1.5rem;
+
+}
+header .container .sign-in .fa-laptop{
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid #00000010;
+    border-radius: 35px;
+    background-color: #00000010;
+}
+header .container .sign-in h2{
+    font-size: 1rem;
+    font-weight: inherit;
+    font-family: sans-serif;
+}
+.drop-down{
+    display: none;
+}
+.drop-down ul li a{
+    font-size: .8rem;
+    color: #00000090;
+    font-family: poppins,sans-serif;
+
+}
+.drop-down ul{
+padding: 0px 100px 0px 20px;
+}
+.drop-down ul:hover{
+    background-color: #00000010;
+}
+.list main li{
+    margin-left: 10px;
+    font-size: 20px;
+    /* padding: 20px; */
+}
+.list ul .drop-down ul li{
+   padding-top: 10px;
+ 
+}
+.list ul .drop-down ul li a{
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+}
+.list ul li:hover .drop-down{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    color: #00000090;
+    border-radius: 5px;
+    
+
+
+}
+
+.list ul li a:hover{
+   color: #000;
+}
+
+.home-page .container{
+    background-image: url(../images/slider3.png);
+    height: 50vh;
+    width: 76%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    border: 1px solid #fff;
+    /* box-shadow: 0px 5px 15px 5px gold; */
+   animation: slider 15s infinite linear;
+}
+@keyframes slider{
+    0%{background-image:url(../images/slider3.png);}
+    35%{ background-image: url(../images/slider2.PNG);}
+    70%{background-image: url(../images/slider1.PNG);}
+}
+.sell-area .container .left-side .cards .card-1{ 
+    height: 50vh;
+   background-position: center;
+   background-size: 100% 100%;
+   animation: some 9s infinite linear;
+   background-image: url(../images/product1.PNG);
+ 
+}
+@keyframes some{
+    0%{background-image: url(../images/left4.PNG);}
+    60%{background-image: url(../images/left6.PNG);}
+    
+}
+
+
+ .product-img img{
+     height: 100px;
+ }
+
+ footer .container .soical-app span{
+     border: 1px solid  #00000010;
+     padding: 5px;
+     background-color: #00000010;
+     border-radius: 25px;
+
+ }
+ footer .container .soical-app i{
+     padding: 5px;
+ }
+ .bottom-info .icons i{
+     list-style-type: none;
+ }
+.bottom-info .icons i a{
+    color: rgb(10, 98, 230);
+}
+footer .continer h1{
+    font-family: poppins,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+footer .continer a{
+    font-family: poppins,sans-serif;
+}
+footer .container a:hover{
+    color: #000;
+}
+
+.sell-area .container .right-side h1{
+    font-weight: 400;
+    line-height: 2rem;
+  
+}
+.sell-area .container .right-side .content{
+    padding: 8px;
+}
+.sell-area .container .right-side .content p{
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 4px;
+    font-family: poppins,sans-serif;
+    color: #000;
+}
+header .container .sign-in a:hover{
+  color: #000;
+}
+header .container .logo-content a:hover{
+    color: #000;
+  }
+
+  .bottom-info ul li a{
+      color: rgb(47, 102, 223); 
+  }
+/* helping tools start */
+.btn-dark{
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+
+
