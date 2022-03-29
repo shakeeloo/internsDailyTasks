@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#main{
+    /* background-color: gold; */
+    height: 100vh;
+    position: relative;
+}
+#main .container{   
+    background-color: #ffffff99;
+     height: auto;
+     /* transform: translate(50% ); */
+     padding-top: 20px;
+     top: 10%;
+     left: 25%;
+     position: absolute;
+     width: 50%;
+     border-radius: 10px;
+}
+#main .container .main-title{
+    text-align: center;
+}
+#main .container .main-title .center-title{
+   font-size: 60px;
+   color: #00000040;
+   font-family: initial;
+}
+#main .container .main-title .center-title:before{
+    content: attr(data-title);
+   font-size: 50px;
+    position: absolute;
+    color: #000;
+    top: 5%;
+    left: 38%;
+    opacity: 0.7;
+
+
+ }
+#submitbtn{
+    padding: 5px 25px;
+    border:1px solid #00000020;
+    background-color: #00000020;
+}
+#clearbtn{
+    padding: 5px 25px;
+    border:1px solid #00000020;
+    background-color: #00000020;
+
+
+}
+#confirm{
+    color: #e47911;
+}
+#confirmit{
+    color: #e47911;
+}
+#name{
+    background:transparent ;
+    color: #fff;
+}
+#email{
+    background:transparent ;
+    color: #fff;
+}
+#countery-sec{
+    background:transparent ;
+    border: 1px solid #00000050;
+    padding: 5px;
+}
+#phone{
+    background:transparent ;
+    color: #fff;
+}
+#message{
+    background:transparent ;
+    color: red;
+}
+#clear-output div{
+    color: #fff;
+}
+#searchbtn{
+    background-color: #e47911;
+    padding: 1px 25px;
+    border-radius: 2px;
+}
+#googleinput{
+    background: transparent;
+    border-bottom: 1px solid red;
+    outline: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <section>
+   <div class="container">
+       <div class="top-content">
+          <div class="title">
+              <span class=""><h1>Task List</h1></span>
+              <span><p>New Task</p></span>
+          </div>
+          <div class="main"><input type="text" name="" id="input" value =""></div>
+       </div>
+       <div class="button">
+        <input type="submit" id="submitBtn" value="ADD TASK" class="input">
+        <input type="submit" id="subsubmit" value="ADD TASK Captalise" class="subinput">
+       </div>
+       <div class="snd-content">
+         <span id="task-title" class="task"><h2>Tasks</h2></span>
+         <ul class="list" id="ul-list">
+              <li class="collection" id="liarea">Hello 
+                <a class="delete">
+                <i href ="#" id ="icon" class="fa fa-remove"></i> 
+                </a>  
+                </li> 
+        </ul>  
+        <ul id="sub-collection">
+            <li class="collection" id="liarea">Hello 
+                <a class="delete">
+                <i href ="#" id ="icon" class="fa fa-remove"></i> 
+                </a>  
+                </li> 
+        </ul>
+        <div class="clear-main"> 
+        <a href="#" id="clear-item" class="clear">Clear Task</a>
+        <a href="#" id="sub-clear" class=clear">Clear Captalise Task</a>
+    </div>
+       </div>
+   </div>
+</section>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/e36f64cc94.js" crossorigin="anonymous"></script>    
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>
+
