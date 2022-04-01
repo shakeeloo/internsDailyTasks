@@ -8,7 +8,7 @@ function loadData(){
   xhr.open('GET', 'data.txt', true);
 
   xhr.onload = function(){
-      console.log('READYSTATE', xhr.readyState);
+      // console.log('READYSTATE', xhr.readyState);
       if(this.status === 200){
         // console.log(this.responseText);
        const output = document.getElementById('output');
@@ -17,7 +17,7 @@ function loadData(){
   }
 
   xhr.onprogress = function(){
-    console.log('EADYSTATE', xhr.responseText);
+    // console.log('EADYSTATE', xhr.responseText);
   }
   xhr.onerror =function(){
       console.log('error is found',xhr.responseText);

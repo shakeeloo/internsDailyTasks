@@ -139,3 +139,36 @@ const ui = new UI();
 // const me = JSON.parse(localStorage.getItem('signupinfo'));
 // console.log(me);
 
+
+
+
+//using callback function on login project for slide some after some time
+
+const slides =[
+  {content :"Thanku"}
+];
+
+function createslide(slide, callback){
+  setTimeout(function(){
+   slides.push(slide);
+   callback();
+   console.log('create function run');
+  }, 5000);
+}
+
+function getslide(){
+  setTimeout(function(){
+   let output =" ";
+ slides.forEach(function(slide){
+   output = `<h3>${slide.content}</h3>`;
+ })
+  document.getElementById('slide-shower').innerHTML = output;
+  console.log('get function run');
+  }, 100);
+}
+let newslide ={content :"Wellcome to our webside! create an account to sign in and enjoy our side!"}
+
+createslide(newslide, getslide);
+
+// createslide();
+// getslide();
