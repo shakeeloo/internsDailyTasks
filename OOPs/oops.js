@@ -243,6 +243,7 @@
 
 // console.log(usra.somehow)
 // console.log(usra.overcome())
+// console.log(usra)
 
 
               //Prototype Chain 
@@ -354,61 +355,115 @@
 //Sub Classes are known as the class which children to another class
 // Classes are made children to another class using keyword extend
 
-// class Papa{
-//   constructor(daughter){
-//     this.daughter = daughter;
-//   }
-//   says(){
-//     return `I've got the cutest doll named ${this.daughter}`
-//   }
-// }
+class Papa{
+  constructor(daughter){
+    this.daughter = daughter;
+  }
+  says(){
+    return `I've got the cutest doll named ${this.daughter}`
+  }
+}
 
-// class Me extends Papa {
-//   constructor(daughter){
-//     super(daughter);
-//   }
-//   says(){
-//     return `My Papa is prooud that ${this.daughter} is his daughter`
-//   }
-// }
+class Me extends Papa {
+  constructor(daughter){
+    super(daughter);
+  }
+  says(){
+    return `My Papa is prooud that ${this.daughter} is his daughter`
+  }
+}
 
-// let xur = new Me('Mass')
+let xur = new Me('Mass')
 
-// console.log(xur.says())
-
-
+console.log(xur.says())
 
 
-//     const Almas = {
-//       speaks(){
-//         return `Almas speaks ${this.lang} language`
-//       }
-//     };
 
-//     class Language{
-//       constructor(lang){      //You can use classes with outside constructors
-//         this.lang = lang;
-//       }
-//     }
 
-//   Object.setPrototypeOf(Language.prototype, Almas)
-//  let l = new Language('Khowar')
+    const Almas = {
+      speaks(){
+        return `Almas speaks ${this.lang} language`
+      }
+    };
+
+    class Language{
+      constructor(lang){      //You can use classes with outside constructors
+        this.lang = lang;
+      }
+    }
+
+  Object.setPrototypeOf(Language.prototype, Almas)
+ let l = new Language('Khowar')
  
-//  console.log(l.speaks())
+ console.log(l.speaks())
 
-// const Read = {
-//   grade(){
-//     return` I read in grade ${this.which}`
-//   }
-// }
+const Read = {
+  grade(){
+    return` I read in grade ${this.which}`
+  }
+}
 
-// class Class{
-//   constructor(which){
-//     this.which = which
-//   }
-// }
-// Object.setPrototypeOf(Class.prototype,Read)//Here we set Read constructor as a prototype of Class
+class Class{
+  constructor(which){
+    this.which = which
+  }
+}
+Object.setPrototypeOf(Class.prototype,Read)//Here we set Read constructor as a prototype of Class
 
-//  const b = new Class('12')
+ const b = new Class('12')
 
-//  console.log(b.grade())
+ console.log(b.grade())
+
+//               Spread Operator and Rest operator
+
+// Spread operator basically converts a bunch(pack) of values into individual values.
+// sometimes we need some values to add, and we have an array of values which can't be added easily, spred operator
+// individualize each value of the array and makes the value available to add. Example goes down
+
+let spreadEx = function(a, b){
+          return a + b;
+}
+let myA = [6,7]       //Here spread operator is individualizing the myA values
+
+console.log(spreadEx(...myA))
+
+
+// Rest operator bunches idicidual values into a group.
+// For Example, it packs all the idividual values into an array
+function resetEx(a, b, ...args){
+     let myNum = a + b;
+
+    let pro = 2;
+
+      for (const arg of args) {
+        pro *= arg;                    //Here no matter how many values you pass, first two value wiil ba taken by
+      }                               //variables a and b and rest will be iterated via for of loop
+      return [pro, myNum];
+}
+console.log(resetEx(1,2,3,4,5,6))
+
+
+class User{
+    constructor(name,age,relation,place){
+      this.name = name;
+      this.age = age;
+      this.relation = relation;
+      this.place = place;
+    }
+
+    nextOne = [];
+
+    deosWhat(){
+      return `${this.name} does nothing but talk :)`;
+    }
+    goesWhere(place){
+      this.nextOne.push(place)
+    }
+    nextOneHere(){
+      this.nextOne;
+      return;
+    }
+}
+
+
+module.exports = User;

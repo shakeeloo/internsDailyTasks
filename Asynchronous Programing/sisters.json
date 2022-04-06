@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "relation": "Sister",
+        "name": "Ruby",
+        "married": "Married"
+    },
+    {
+        "id": "2",
+        "relation": "Sister",
+        "name": "Husna",
+        "married": "Not Married"
+    },
+    {
+        "id": "4",
+        "relation": "Sister",
+        "name": "Usra",
+        "married": "Not Married"
+    }
+]

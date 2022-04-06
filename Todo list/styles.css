@@ -5,7 +5,10 @@
     --gray: #93979c;
     --light: #EEE;
     --pink: #EC4899;
-    --purple: #8B5Cf6;
+    --purple: 	#800080;
+    --blue:#000080;
+    --green:#00FF00;
+    --teal:#008080;
 }
 *{
     box-sizing: border-box;
@@ -55,7 +58,7 @@ input, button{
 #sub{
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink),var(--purple));
+    background-image: linear-gradient(to right, var(--teal),var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -121,7 +124,7 @@ main{
     opacity: 0.6;
 }
 .task .action .edit{
-    background-image: linear-gradient(to right, var(--pink),var(--purple));
+    background-image: linear-gradient(to right, var(--teal),var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
