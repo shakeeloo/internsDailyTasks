@@ -1,0 +1,61 @@
+.container1{
+    background-color: rgb(194, 194, 206);
+    height: 50vh;
+    width: 70%;
+    margin-left: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container1 .one{  
+    background-color: rgb(118, 85, 150);
+    width: 20%;
+    height: 25vh;
+}
+.container1 .two{  
+    background-color: rgb(70, 161, 119);
+    width: 20%;
+    height: 25vh;
+}
+.container1 .three{  
+    background-color: rgb(150, 135, 85);
+    width: 20%;
+    height: 25vh;
+}
+.oneColor{
+    background-color: rgb(55, 55, 158);
+}
+.div1{
+    background-color: rgb(97, 93, 44);
+    width: 20%;
+    height: 25vh;
+}
+.parent{
+    background-color: rgb(75, 139, 75);
+    height: 40vh;
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-left: 12rem;
+}
+.sub_parent1{
+    background-color: rgb(139, 75, 120);
+    height: 25vh;
+    width: 80%;
+    padding-left: 50px;
+    padding-top: 50px
+}
+.sub_parent2{
+    background-color: rgb(129, 139, 75);
+    height: 10vh;
+    width: 80%;
+    padding-left: 50px;
+    padding-top: 50px
+}
+table td{
+    border: 2px solid transparent;
+    text-align: center;
+}
+.highlight{
+    background-color: rgb(39, 163, 163);
+}

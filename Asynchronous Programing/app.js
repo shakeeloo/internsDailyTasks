@@ -329,23 +329,23 @@
                   // Callback, Promises, async and await
                   //callBack
 
-const friends = [
-      { catg : 1,
-        name : "Mustansir",
-        belongs : "Chitral",
-        does : "Wild-life Officer"
-      },
-      { catg : 2,
-        name : "Fozia",
-        belongs : "Ishkoman",
-        does : "Banking"
-      },
-      { catg : 3,
-        name : "Atiq",
-        belongs : "Chitral",
-        does : "Student(QAU)"
-      }
-]
+// const friends = [
+//       { catg : 1,
+//         name : "Mustansir",
+//         belongs : "Chitral",
+//         does : "Wild-life Officer"
+//       },
+//       { catg : 2,
+//         name : "Fozia",
+//         belongs : "Ishkoman",
+//         does : "Banking"
+//       },
+//       { catg : 3,
+//         name : "Atiq",
+//         belongs : "Chitral",
+//         does : "Student(QAU)"
+//       }
+// ]
 
 // function addFriend(friend, callback){
 //   setTimeout(() => {
@@ -428,16 +428,155 @@ const friends = [
 //  getName();
 
 
-async function testing(){
-      const data = await fetch('sisters.json');
-      const response_ = await data.json();
+// async function testing(){
+//       const data = await fetch('sisters.json');
+//       const response_ = await data.json();
 
-      return response_
-}
+//       return response_
+// }
 
-testing().then((result)=>{
-  console.log(result)
-}).catch((error)=>{
-  console.log(error)
-})
+// testing().then((result)=>{
+//   console.log(result)
+// }).catch((error)=>{
+//   console.log(error)
+// })
 
+// function makeRangeItrator(start = 0, end = Infinity, step = 1) {
+//   let nextIndex = start;
+//   let iterationCount = 0;
+
+//   const rangeIterator = {
+//      next() {
+//          let result;
+//          if (nextIndex < end) {
+//              result = { value: nextIndex, done: false }
+//              nextIndex += step;
+//              iterationCount++;
+//              return result;
+//          }
+//          return { value: iterationCount, done: true }
+//      }
+//   };
+//   return rangeIterator;
+// }
+
+// const it = makeRangeIterator(1, 10, 2);
+
+// let result = it.next();
+// while (!result.done) {
+//  console.log(result.value); // 1 3 5 7 9
+//  result = it.next();
+// }
+
+// console.log("Iterated over sequence of size: ", result.value);
+
+
+
+                //Destructuring
+
+// Destructuring means unpacking the values from arrays or objects and putting them in a separate variable
+// 'rest' is destructuring assignment
+// let a, b, rest;
+// [a, b] = ['cow', 'hen',];
+
+// console.log(a);
+// // expected output: cow
+
+// console.log(b);
+// // expected output: hen
+
+// const mal = [a, b, ...rest] = ['cow','hen', 'duck','gordogh','istor','keli','pai'];
+
+// console.log(mal);
+// // expected output: Array [ 'duck','gordogh','istor','keli','pai']
+
+// mal.push('chani')
+// console.log(mal)
+// // expected output: Array [ 'duck','gordogh','istor','keli','pai','chani]
+
+
+// let a,b,rest;
+// ({a,b} = {a:'cow', b:'hen'})
+
+// console.log(a)
+// // expected output: cow
+
+// console.log(b)
+// // expected output: hen
+
+// ({a, b, ...rest} = {a: 'cow', b: 'hen', c: 'gordogh', d: 'keli'});
+
+// console.log(rest)
+
+// try{
+// // // expected  ReferenceError
+// // belong();
+
+// //TypeError is expected here
+// this.belong();
+
+// //Syntaz Error is Expected here
+// console.log{`I am here`}
+
+// }catch(error){
+//   console.log(error)
+//   console.log(error.message)
+//   // console.log(error.name)
+//   // console.log(error instanceof ReferenceError)
+//   // console.log(error instanceof TypeError)
+// }
+// console.log(`I am here!`)       //Script interpretation deosn't stop while the error is handled
+//                                   // The program goes on smoothly.
+
+
+                //Regular Expression
+
+          //Below we will be doing few jucntions related to regular Expression
+
+var regE = /key/i;  // add i after / to make it case insensitive
+var regE = /key/g;    //Makes it available for global search
+
+// //exec() method
+// //returns an array if the regular Ex matches any value in the string 
+// // and null if no values is matches
+
+// let result = regE.exec('key function')
+// console.log(result);
+// console.log(result[0]); //the index where the key starts
+// console.log(result.input)     // the input where the value is matched
+
+// // test() method returns boolean value
+// //true if the value matches and false if the value doesn't match
+
+// let result = regE.test('key function')
+// let result2 = regE.test('check here')
+
+// console.log(result)
+// console.log(result2)
+
+
+// // match() : for this method to work we give additional string to compare with
+// //if matches, return will be an array otherwise/ null
+
+// let string1 = "Hi there!";
+// let string2 = "Key there"   
+// let result = string1.match(regE)
+// let result2 = string2.match(regE)     // Gives null if i is not added in the regE
+
+// console.log(result2)
+
+// // search()  This method returns the index of where it found the regE
+
+// let str = " Your Key is there" ;
+
+// let result = str.search(regE)
+
+// console.log(result)
+
+// //replace() method replaces the value with the new one
+
+// let str = "Your Key is there" ;
+
+// let result = str.search(regE, 'keys')
+
+// console.log(result)

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Via Regular Expression</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
+</head>
+<body>
+    <div class="container col-md-6 mx-auto">
+        <h2>Form using Regular Expressions</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="">Full Name</label>
+                <input type="text" class="form-control is-valid" id="name" Placeholder="Full Name" >
+                <div class="invalid-feedback">
+                    Enter a Name having 2 to 10 Characters
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Country Code</label>
+                <input type="text" class="form-control" id="code" Placeholder="Country Code">
+                <div class="invalid-feedback">
+                    Enter Country Code
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Email Adress</label>
+                <input type="text" class="form-control" id="email" Placeholder="Email Adress">
+                <div class="invalid-feedback">
+                    Enter Email Adress
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Phone Number</label>
+                <input type="text" class="form-control" id="phone" Placeholder="Phone Number">
+                <div class="invalid-feedback">
+                    Enter Phone number
+                </div>
+            </div>
+            <input type="submit" id="btn" value="Submit" class="btn btn-primary btn-block">
+        </form>
+    </div>
+    <div id="info" class="ml-8">
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" ></script>
+    <script src="app.js"></script>
+   
+</body>
+</html>

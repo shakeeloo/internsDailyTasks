@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrapUp File</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+    <h1 style="font-size: 30px;">Wraping Up the course with Last Touch!</h1>
+    <hr>
+            <!-- DOM Selector for single element and multiple element and DOM tarversing and Events-->
+        <div class="container1">
+            <!-- container starts here -->
+            <div class="one"></div>     
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <br>
+
+                <!-- Event Bubbling goes here -->
+
+        <div class="parent" onclick="alert('you Click the parent')">
+            <div class="sub_parent1" onclick="alert('you Click sub_parent1')">
+                <div class="sub_parent2" onclick="alert('you Click sub_parent2')">
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+                    <!-- Stop Propogation -->
+
+<!-- the point where stopPropogation() method is used doesn't allow event to happen on itself and further -->
+
+        <div class="parent" onclick="alert('you Click the parent')">
+            <div class="sub_parent1" onclick="event.stopPropagation()">
+                <div class="sub_parent2" onclick="alert('you Click sub_parent2')">
+           
+                </div>
+            </div>
+        </div>
+            
+
+                        <!-- Event Delegation -->
+
+<table id="bagua-table">
+        <tr>
+          <th colspan="3"><em>Bagua</em> Chart: Direction, Element, Color, Meaning</th>
+       </tr>
+       <tr>
+          <td class="1" style="background-color: blue;"><strong>Northwest</strong>
+              <br>Metal
+               <br>Silver
+              <br>Elders
+           </td>
+           <td class="2" style="background-color: red;"><strong>North</strong>
+              <br>Water
+              <br>Blue
+              <br>Change
+            </td>
+           <td class="3" style="background-color: green;"><strong>Northeast</strong>
+              <br>Earth
+              <br>Yellow
+              <br>Direction
+            </td>
+      </tr>
+       <tr>
+            <td class="4" style="background-color: purple;"><strong>West</strong>
+               <br>Metal
+               <br>Gold
+              <br>Youth
+            </td>
+       <td class="5" style="background-color: aqua;"><strong>Center</strong>
+             <br>All
+             <br>Purple
+            <br>Harmony
+        </td>
+         <td class="6" style="background-color: rgb(99, 21, 51);"><strong>East</strong>
+            <br>Wood
+            <br>Blue
+            <br>Future
+        </td>
+   </tr>
+   <tr>
+        <td class="7" style="background-color: rgb(32, 122, 107);"><strong>Southwest</strong>
+          <br>Earth
+          <br>Brown
+          <br>Tranquility
+       </td>
+       <td class="8" style="background-color: rgb(21, 21, 126);"><strong>South</strong>
+           <br>Fire
+           <br>Orange
+          <br>Fame
+       </td>
+       <td class="9" style="background-color: rgb(85, 156, 85);"><strong>Southeast</strong>
+           <br>Wood
+           <br>Green
+           <br>Romance
+        </td>
+    </tr>
+                        
+</table>
+                        
+
+
+    <script src="up.js"></script>
+</body>
+</html>
