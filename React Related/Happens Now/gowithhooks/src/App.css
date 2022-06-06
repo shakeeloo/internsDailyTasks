@@ -1,0 +1,62 @@
+/* .App {
+  text-align: center;
+}
+.whole-div{
+  border: 1px solid rgb(183, 183, 183);
+  margin: 0px 400px 0px 400px;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.icon{
+  width: 25px;
+}
+.title-div{
+  font-weight: bold;
+  margin-bottom:7px;
+}
+.title-div:hover{
+  color: rgb(183, 183, 183);
+}
+.active{
+  color: orangered;
+}
+.field{
+  padding: 30px 0px 30px 0px;
+}
+.label{
+  font-weight: bold;
+  font-family: cursive;
+}
+.input{
+  margin: 8px;
+  padding: 8px;
+  border-radius: 50px;
+  font-family: cursive;
+}
+.content{
+  border: 1px solid black;
+  width: 50rem;
+  margin: 0px 0px 5px 15rem;
+  padding-bottom: 15px;
+}
+.text{
+  text-transform: capitalize;
+}
+.ref{
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+    /* For Todo List */
+
+#yes{
+  font-size: 20px;
+  background: -webkit-linear-gradient(rgb(105, 44, 237), rgb(241, 51, 219));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#no{
+  font-size: 20px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
